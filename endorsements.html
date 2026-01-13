@@ -182,57 +182,121 @@
             letter-spacing: 2px;
         }
         
+        /* ===== ORGANIZATIONS SECTION ===== */
+        .organizations {
+            background-color: #ffffff;
+            padding: 50px;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .org-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            color: #ff6b0f;
+            letter-spacing: 6px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        
+        .org-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .org-logo {
+            max-height: 100px;
+            width: auto;
+        }
+        
         /* ===== FOOTER ===== */
         .footer {
             background-color: #003ca5;
-            padding: 60px 50px;
+            padding: 40px 50px 30px;
             text-align: center;
-            border-top: 1px solid rgba(255,255,255,0.15);
+        }
+        
+        .footer-top {
+            margin-bottom: 25px;
+        }
+        
+        .footer-top .footer-link {
+            color: #ffffff;
+            font-size: 13px;
         }
         
         .footer-logo {
             height: 65px;
             width: auto;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         
         .footer-socials {
             display: flex;
             justify-content: center;
             gap: 18px;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         
         .footer-socials a {
-            width: 42px;
-            height: 42px;
-            border: 2px solid #ffffff;
-            border-radius: 50%;
+            color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #ffffff;
         }
         
         .footer-socials a:hover {
-            background-color: #ffffff;
-            color: #003ca5;
+            color: #ff6b0f;
         }
         
         .footer-info {
-            color: #ffffff;
+            color: #ff6b0f;
             font-size: 13px;
-            line-height: 2.2;
+            line-height: 2;
+            margin-bottom: 15px;
         }
         
         .footer-info a {
-            color: #ffffff;
+            color: #ff6b0f;
+        }
+        
+        .footer-links {
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: #ff6b0f;
+            font-size: 13px;
+            text-decoration: underline;
+        }
+        
+        .footer-pledge {
+            font-size: 12px;
+            color: rgba(255,255,255,0.85);
+            max-width: 600px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+        }
+        
+        .footer-powered {
+            font-size: 11px;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 15px;
+        }
+        
+        .footer-powered a {
+            color: rgba(255,255,255,0.6);
         }
         
         .footer-disclaimer {
-            font-size: 11px;
-            color: rgba(255,255,255,0.6);
-            margin-top: 25px;
+            font-size: 16px;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            padding: 20px 60px;
+            display: inline-block;
+            margin-top: 10px;
         }
         
         /* ===== RESPONSIVE ===== */
@@ -424,12 +488,20 @@
             </article>
         </div>
     </main>
+    
+    <!-- Organizations Section - Full Width -->
+    <section class="organizations">
+        <h2 class="org-title">ORGANIZATIONS</h2>
+        <div class="org-logos">
+            <img src="https://run.imgix.net/53e59a3a-ff97-4c43-aa89-78d37131906f/8d41c035-113b-4a9b-9e2a-5b407edd7c7a/8d41c035-113b-4a9b-9e2a-5b407edd7c7a.png?w=200" alt="Local 2 UNITE HERE!" class="org-logo">
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <a href="https://www.conniechansf.com/">
-            <img src="https://run.imgix.net/53e59a3a-ff97-4c43-aa89-78d37131906f/5250b9c5-1806-4507-967f-c9b3e64ff93b/5250b9c5-1806-4507-967f-c9b3e64ff93b.png?w=200" alt="Connie Chan for Congress" class="footer-logo">
-        </a>
+        <div class="footer-top">
+            <a href="https://www.conniechansf.com/privacy-policy" class="footer-link">Privacy Policy</a>
+        </div>
         
         <div class="footer-socials">
             <a href="https://facebook.com/conniechansanfrancisco" aria-label="Facebook">
@@ -444,7 +516,20 @@
         </div>
         
         <div class="footer-info">
-            <a href="/cdn-cgi/l/email-protection#83e0e2eef3e2eae4edc3e0ecededeae6e0ebe2edf0e5ade0ecee"><strong><span class="__cf_email__" data-cfemail="bedddfd3cedfd7d9d0feddd1d0d0d7dbddd6dfd0cdd890ddd1d3">[email&#160;protected]</span></strong></a><br>
+            <a href="mailto:campaign@conniechansf.com"><strong>campaign@conniechansf.com</strong></a><br>
             <strong>Connie Chan for Congress</strong><br>
-            <strong>912 Cole St #368, San Francisco, CA 94117</strong><br><br>
-            <a href="https://www.conniechansf.com/privacy-policy">Privacy Policy & Terms 
+            <strong>912 Cole St #368, San Francisco, CA 94117</strong>
+        </div>
+        
+        <div class="footer-links">
+            <a href="https://www.conniechansf.com/privacy-policy">Privacy Policy & Terms of Service</a>
+        </div>
+        
+        <p class="footer-pledge">Connie Chan for Congress will not take money from corporate PACs, AIPAC or its lobbyists and representatives, the NRA or lobbyists and executives from pharma, PG&E, fossil fuel or tobacco companies.</p>
+        
+        <p class="footer-powered">Powered by <a href="https://www.designedtorun.com/">RUN!</a> website builder</p>
+        
+        <p class="footer-disclaimer">Paid for by Connie Chan for Congress</p>
+    </footer>
+</body>
+</html>
